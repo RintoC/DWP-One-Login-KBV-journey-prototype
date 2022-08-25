@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <a href="postcode.html" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Please select your address
+      </h1>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="sort">
+          Address:
+        </label>
+        <select class="govuk-select" id="sort" name="sort">
+          <option value="published">2 Hippo avenue</option>
+          <option value="updated" selected>4 Hippo Avenue</option>
+          <option value="views">6 Hippo Avenue</option>
+          <option value="comments">8 Hippo Avenue</option>
+          <option value="comments">10 Hippo Avenue</option>
+          <option value="comments">12 Hippo Avenue</option>
+          <option value="comments">14 Hippo Avenue</option>
+        </select>
+      </div>
+
+      <a href = "date-of-birth.html"><button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button></a>
+    </div>
+  </div>
+{% endblock %}
