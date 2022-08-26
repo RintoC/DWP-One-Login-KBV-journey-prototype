@@ -1,0 +1,44 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Proving your identity
+      </h1>
+      <p>
+        You can set up a digital identity to show you’re who you say you are.
+      </p>
+
+      <p>
+        We use digital identities to:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>keep your personal details secure</li>
+          <li>protect your account against fraud</li>
+          <li>provide you with a faster service</li>
+        </ul>
+
+      <p>So we can confirm your identity, you may need to have the following information available</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>details of your Universal Credit claim. This can include dependants and partner details</li>
+        <li>past or present employment information</li>
+      </ul>
+
+      <p>If you do not enter anything for more than 30 minutes, your application will time out and you’ll have to start again.</p>
+      <p>You cannot save your application and come back later.</p>
+
+      <a href = "create_account.html"><button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}
