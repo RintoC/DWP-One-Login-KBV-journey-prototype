@@ -1,0 +1,42 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <a href="index.html" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        We need to check your details
+      </h1>
+
+      <p>Your details will be checked against information held by another organisation.</p>
+      
+      <p>This will help us protect you against online identity theft.</p>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Who we check your details with
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          We’ll check your details with the Department of Work and Pensions (DWP). This is because they can verify your identity with information based on interactions you’ve previously had with them.
+        </div>
+        <div class="govuk-details__text">
+          Read our privacy notice if you’d like to know more about how the details will be used to prove your identity.
+        </div>
+      </details>
+
+      <a href="ask-questions.html"><button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button></a>
+
+    </div>
+  </div>
+{% endblock %}
