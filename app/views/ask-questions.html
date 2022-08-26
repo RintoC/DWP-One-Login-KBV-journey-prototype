@@ -1,0 +1,50 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <a href="index.html" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        We need to ask you some questions to verify your identity
+      </h1>
+
+      <p>We’ll ask you some security questions that only you should know the answers to. These will be based on information you’ve already given us.</p>
+      
+      <p>We will not keep your answers.</p>
+
+
+      <p>We'll do this to:</p>
+        <ul class= "govuk-list govuk-list--bullet">
+        <li>keep your personal details secure
+          <li>protect your account against fraud
+          <li>provide you with a faster service</li>
+        </li>
+      </ul>
+      
+      <p>So we can confirm your identity, you may need to have the following information available:</p>
+        <ul class= "govuk-list govuk-list--bullet">
+        <li>details of benefits you receive
+          <li>your partner’s details
+          <li>past or present employment information</li>
+        </li>
+      </ul>
+      <p class="govuk-body govuk-!-font-weight-bold">
+        Try to to answer these questions as accurately as you can. You will not be able to change your answers if you make a mistake</p>
+      
+
+      <p>If you do not enter anything for more than 30 minutes, your application will time out and you’ll have to start again. You cannot save your application and come back later.</p>
+
+      <a href="#"><button class="govuk-button" data-module="govuk-button">
+        Start
+      </button></a>
+
+    </div>
+  </div>
+{% endblock %}
