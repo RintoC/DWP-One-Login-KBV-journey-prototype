@@ -1,0 +1,92 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<a href="ask-questions.html" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div id="govuk-hint" class="govuk-hint">
+        Confirm your identity
+      </div>
+      <h1 class="govuk-heading-l">
+        Which one of these benefits have you claimed previously?
+      </h1>
+      <div id="govuk-hint" class="govuk-hint">
+      Select the benefit you have claimed at any time since 28 December 2019.
+      </div>
+  
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                Jobseeker's Allowance (JSA)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                Tax Credits
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                Carer's Allowance
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                Personal Independence Payment (PIP)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                Employement and Support Allowance (ESA)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                Income Support
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            I do not have this information right now
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          You can stay on this page for up to 20 minutes if you need to check your answer. Do not close the web page.
+        </div>
+
+        <div class="govuk-details__text">
+          If you need more time, you can come back aand confirm your identity later. You might be asked for different information.
+        </div>
+      </div>
+
+      </details>
+
+      <div>
+      <a href="#"><button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button></a>
+        </div>
+        
+      <a href ="#"> I cannot answer this question</a>
+
+    </div>
+  </div>
+{% endblock %}
