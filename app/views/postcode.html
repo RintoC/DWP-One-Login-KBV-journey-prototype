@@ -19,7 +19,7 @@
         <label class="govuk-label" for="one-quarter">
           Postcode
         </label>
-        <input class="govuk-input govuk-!-width-one-quarter" id="one-quarter" name="one-quarter" type="text">
+        <input class="govuk-input govuk-!-width-one-quarter" id="one-quarter" name="one-quarter" type="text" onKeyPress="if(this.value.length==9) return false;" />
       </div>
 
       <a href = "address-manual.html"><p>I don't know my postcode</p></a>
