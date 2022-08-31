@@ -7,4 +7,16 @@ if (window.console && window.console.info) {
 
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
+
+  var ShowPassword = new GOVUK.Modules.ShowPassword()
+  ShowPassword.init()
 })
+
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
