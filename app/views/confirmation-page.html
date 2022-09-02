@@ -19,51 +19,56 @@
             Name
           </dt>
           <dd class="govuk-summary-list__value">
-            Sarah Philips
+            {{ data['full-name'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
-              Change<span class="govuk-visually-hidden"> name</span>
+            <a class="govuk-link" href="full_name.html">
+              Change<span class="govuk-visually-hidden">name</span>
             </a>
           </dd>
         </div>
+
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Date of birth
           </dt>
           <dd class="govuk-summary-list__value">
-            5 January 1978
+            {{ data['passport-issued-day'] }}
+            {{ data['passport-issued-month'] }}
+            {{ data['passport-issued-year'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
-              Change<span class="govuk-visually-hidden"> date of birth</span>
+            <a class="govuk-link" href="date-of-birth.html">
+              Change<span class="govuk-visually-hidden">date of birth</span>
             </a>
           </dd>
         </div>
+
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Address
           </dt>
           <dd class="govuk-summary-list__value">
-            72 Guild Street<br>London<br>SE23 6FH
+            {{ data ['sort'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
-              Change<span class="govuk-visually-hidden"> address</span>
+            <a class="govuk-link" href="address-lookup.html">
+              Change<span class="govuk-visually-hidden">address</span>
             </a>
           </dd>
         </div>
+
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Contact details
           </dt>
           <dd class="govuk-summary-list__value">
-            <p class="govuk-body">07700 900457</p>
-            <p class="govuk-body">sarah.phillips@example.com</p>
+            {{ data['numbers'] }}
+            {{ data['email-address'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="#">
-              Change<span class="govuk-visually-hidden"> contact details</span>
+            <a class="govuk-link" href="Email_address.html">
+              Change<span class="govuk-visually-hidden">contact details</span>
             </a>
           </dd>
         </div>
