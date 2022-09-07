@@ -11,6 +11,7 @@
     
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+          <form class="form" action="postcode" method="post">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
             <h1 class="govuk-fieldset__heading">
               What is your date of birth?
@@ -50,9 +51,10 @@
         </fieldset>
       </div>
 
-      <a href = "postcode.html"><button class="govuk-button" data-module="govuk-button">
+      <button class="govuk-button" data-module="govuk-button">
         Continue
-      </button></a>
+      </button>
+    </form>
     </div>
   </div>
 {% endblock %}

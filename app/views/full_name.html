@@ -16,22 +16,24 @@
       </h1>
     
       <div class="govuk-form-group">
+        <form class="form" action="date-of-birth" method="post">
         <label class="govuk-label" for="first-name">
           First Name
         </label>
-        <input class="govuk-input" id="first-name" name="first-name" type="text" autocomplete="given-name">
+        <input class="govuk-input" id="first-name" name="name-1" type="text" autocomplete="given-name">
       </div>
 
       <div class="govuk-form-group">
         <label class="govuk-label" for="surname">
           Last Name
         </label>
-        <input class="govuk-input" id="surname" name="surname" type="text" autocomplete="family-name">
+        <input class="govuk-input" id="surname" name="name-2" type="text" autocomplete="family-name">
       </div>
 
-      <a href = "date-of-birth.html"><button class="govuk-button" data-module="govuk-button">
+      <button class="govuk-button" data-module="govuk-button">
         Continue
-      </button></a>
+      </button>
+    </form>
     </div>
   </div>
 {% endblock %}
