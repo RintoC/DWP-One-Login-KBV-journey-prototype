@@ -19,6 +19,7 @@
       <p>Postcode</p>
       <p class="govuk-body govuk-!-font-weight-bold">HI4 PPO   <a href="postcode.html">Change</a></p>
         <div class="govuk-form-group">
+          <form class="form" action="confirmation-page" method="post">
           <label class="govuk-label" for="address-line-1">
             Flat number
           </label>
@@ -29,46 +30,35 @@
           <label class="govuk-label" for="address-line-1">
             House number
           </label>
-          <input class="govuk-input govuk-input--width-4" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1">
+          <input class="govuk-input govuk-input--width-4" id="address-line-1" name="address-line-2" type="text" autocomplete="address-line1">
         </div>
       
         <div class="govuk-form-group">
           <label class="govuk-label" for="address-line-2">
             House name
           </label>
-          <input class="govuk-input govuk-!-width-two-thirds" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+          <input class="govuk-input govuk-!-width-two-thirds" id="address-line-2" name="address-line-3" type="text" autocomplete="address-line2">
         </div>
       
         <div class="govuk-form-group">
           <label class="govuk-label" for="address-town">
             Street name
           </label>
-          <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+          <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-line-4" type="text" autocomplete="address-level2">
         </div>
       
         <div class="govuk-form-group">
           <label class="govuk-label" for="address-town">
             Town or City
           </label>
-          <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+          <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-line-5" type="text" autocomplete="address-level2">
         </div>
      </fieldset>
 
-     <p class="govuk-body govuk-!-font-weight-bold">When did you start living here?</p>
-     <div id="govuk-hint" class="govuk-hint">
-      Enter the year you started living at this address, for example 2017
-      </div>
-
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="address-line-1">
-          Year
-        </label>
-        <input class="govuk-input govuk-input--width-4" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1">
-      </div>
-
-      <a href = "confirmation-page.html"><button class="govuk-button" data-module="govuk-button">
+      <button class="govuk-button" data-module="govuk-button">
         Continue
-      </button></a>
+      </button>
+    </form>
     </div>
   </div>
 {% endblock %}
