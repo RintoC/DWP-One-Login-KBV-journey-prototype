@@ -7,39 +7,52 @@
 
 {% block content %}
 
-  <a href="postcode.html" class="govuk-back-link">Back</a>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-l">
-        Choose your address
-      </h1>
+    <form action="address-lookup-post" method="post">
 
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            Choose your address
+          </h1>
+        </legend>
 
-    <p>Postcode</p>
-    <p class="govuk-body govuk-!-font-weight-bold">HI4 PPO   <a href="postcode.html">Change</a></p>
-      <div class="govuk-form-group">
-        <form class="form" action="confirmation-page" method="select">
-        <label class="govuk-label" for="sort">
-          Choose your current home address from the list
-        </label>
-        <select class="govuk-select" id="address" name="address">
-          <option value="published">2 Hippo avenue</option>
-          <option value="updated" selected>4 Hippo Avenue</option>
-          <option value="views">6 Hippo Avenue</option>
-          <option value="comments">8 Hippo Avenue</option>
-          <option value="comments">10 Hippo Avenue</option>
-          <option value="comments">12 Hippo Avenue</option>
-          <option value="comments">14 Hippo Avenue</option>
-        </select>
-      </div>
-      
-     <a href = "address-manual.html"><p>I cannot find my address in the list</p></a>
+        <p>
+          <span class="govuk-!-margin-bottom-1 govuk-!-display-block">Postcode</span>
+          <strong>{{ data['address-postcode-current'] or 'LS1 3BE' }}</strong>
+          <a href="postcode.html" class="govuk-!-margin-left-5">
+            Change
+            <span class="govuk-visually-hidden">your postcode</span>
+          </a>
+        </p>
 
-      <button class="govuk-button" data-module="govuk-button">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="delivery-address">
+            Choose your current home address from the list
+          </label>
+          <select class="govuk-select" id="delivery-address" name="current-address">
+            <option value="">5 addresses found</option>
+            <option value="address1">Oxford House, Oxford Row, Leeds, {{ data['address-postcode-current'] or 'LS1 3BE' }}</option>
+            <option value="address2">Office 14 New Station St, Leeds, LS1 5DL</option>
+            <option value="address3">38 Park Square North, Leeds, LS1 2NY</option>
+            <option value="address4">Lion House, 41, York Place, Leeds, LS1 2ED</option>
+            <option value="address5">1 Whitehall Quay Whitehall Rd, Leeds, LS1 4HR</option>
+          </select>
+        </div>
+
+      </fieldset>
+
+      <p class="govuk-body"><a href="address-manual.html">I cannot find my address in the list</a></p>
+
+      <button class="govuk-button" type="submit" data-module="govuk-button">
         Choose address
       </button>
-    </div>
-  </form>
+
+    </form>
+
   </div>
+</div>
+
 {% endblock %}

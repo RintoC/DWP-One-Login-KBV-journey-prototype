@@ -44,24 +44,47 @@
             </a>
           </dd>
         </div>
+     
 
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Address
-          </dt>
-          <dd class="govuk-summary-list__value">
-            {{ data['address-line-1'] }}<br>
-            {{ data['address-line-2'] }}<br>
-            {{ data['address-line-3'] }}<br>
-            {{ data['address-line-4'] }}<br>
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="address-lookup.html">
-              Change<span class="govuk-visually-hidden">address</span>
-            </a>
-          </dd>
-        </div>
-      </dl>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Current address
+        </dt>
+        <dd class="govuk-summary-list__value">
+
+          {% if data['address-city-current'] %}
+
+            {% if data['address-flat-number-current'] %}
+              {{ data['address-flat-number-current'] }},<br>
+            {% endif %}
+
+            {% if data['address-house-number-current'] %}
+              {{ data['address-house-number-current'] }}
+            {% endif %}
+
+            {% if data['address-house-name-current'] %}
+              {{ data['address-house-name-current'] }},<br>
+            {% endif %}
+
+            {{ data['address-street-current'] }},<br>
+            {{ data['address-city-current'] }},<br>
+            {{ data['address-postcode-current'] or 'LS1 3BE' }}
+
+          {% else %}
+            Office 14, <br>
+            New Station St, <br>
+            Leeds, <br>
+            LS1 5DL
+          {% endif %}
+
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="address-lookup.html">
+            Change<span class="govuk-visually-hidden"> current address</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
 
       <a href = "check-your-details.html"><button class="govuk-button" data-module="govuk-button">
         I confirm my details are correct
