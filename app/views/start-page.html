@@ -1,0 +1,50 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Create a GOV.UK account or sign in
+      </h1>
+      <p>You'll need:</p>
+        <ul class= "govuk-list govuk-list--bullet">
+        <li>an email address
+          <li>a UK mobile phone number
+        </li>
+      </ul>
+      
+
+      <a href="Email_address.html"><button class="govuk-button" data-module="govuk-button">
+        Create a GOV.UK account
+      </button></a>
+
+      <p>If you already have a GOV.UK account you can <a href>sign in.</a></p>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            About GOV.UK accounts
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          GOV.UK accounts are new. They are a first step towards creating a single account that you can use to sign in to all government services.
+        </div>
+
+        <div class="govuk-details__text">
+          GOV.UK accounts will eventually replace all other government accounts. We're working on adding more features and services.
+        </div>
+
+        <div class="govuk-details__text">
+          For now, you need to use different accounts to access different government services.
+        </div>
+      </details>
+
+    </div>
+  </div>
+{% endblock %}
