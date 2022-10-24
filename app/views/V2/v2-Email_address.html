@@ -1,0 +1,35 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <a href="v2-start-page.html" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Enter your email address
+      </h1>
+      <p>Enter your email address to create an account.</p>
+      
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="email-address">
+          Email address
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="email-address" name="email-address" type="text" autocomplete="email">
+      </div>
+
+      <a href="v2-Check_email.html"><button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+        </li>
+      </ul>
+
+
+    </div>
+  </div>
+{% endblock %}

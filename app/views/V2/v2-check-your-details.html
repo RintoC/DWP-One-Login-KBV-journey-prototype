@@ -1,0 +1,49 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <a href="v2-confirmation-page.html" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        We need to verify your identity
+      </h1>
+
+      <p>Your details will be checked against information held by another organisation.</p>
+      
+      
+        <p>We do this to:</p>
+        <ul class= "govuk-list govuk-list--bullet">
+        <li>protect you against online identity theft
+          <li>keep your personal details secure
+          <li>provide you with a faster service</li>
+        </li></ul>
+       
+     
+      <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Who we check your details with
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+         We’ll check your details with the <a href="https://www.gov.uk/government/organisations/department-for-work-pensions/about/personal-information-charter" target="_blank"> Department of Work and Pensions (opens in a new tab)</a>. This is because they are able to verify your identity based on previous interactions you’ve had with them.
+        </div>
+        <div class="govuk-details__text">
+          Read our <a href="https://www.gov.uk/help/privacy-notice" target="_blank"> privacy notice (opens in a new tab)</a> if you’d like to know more about how the details will be used to prove your identity.
+        </div>
+      </details>
+
+      <a href="v2-ask-questions.html"><button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button></a>
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,40 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Enter your mobile number
+      </h1>
+      <p>We will send a 6 digit security code to the number you give us.</p>
+
+      <p>You must use a UK mobile phone number.</p>
+      
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="mobile-number">
+          UK phone number
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="mobile-number" name="numbers" type="number"/>
+      </div>
+
+    
+
+      <a href="v2-Check_mobile.html"><button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+        </li>
+      </ul>
+
+  
+
+     
+
+    </div>
+  </div>
+{% endblock %}
