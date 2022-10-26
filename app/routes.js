@@ -40,8 +40,7 @@ router.post('/address-lookup-post', function (req, res) {
     res.redirect('confirmation-page')
   })
 
-
-  router.post('/v2-address-lookup-post', function (req, res) {
+  router.post('/V2/v2-address-lookup-post', function (req, res) {
     const address = req.session.data['v2-current-address']
     if (address === 'address6') {
       req.session.data['address-flat-number-current'] = ''
