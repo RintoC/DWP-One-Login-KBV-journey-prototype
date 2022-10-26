@@ -42,7 +42,7 @@ router.post('/address-lookup-post', function (req, res) {
 
 
   router.post('/v2-address-lookup-post', function (req, res) {
-    const address = req.session.data['current-address']
+    const address = req.session.data['v2-current-address']
     if (address === 'address6') {
       req.session.data['address-flat-number-current'] = ''
       req.session.data['address-house-number-current'] = ''
