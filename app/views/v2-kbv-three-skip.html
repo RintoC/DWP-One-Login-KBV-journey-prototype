@@ -1,0 +1,71 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              What is your eldest child's date of birth?
+            </h1>
+          </legend>
+          <div id="passport-issued-hint" class="govuk-hint">
+            For example, 27 3 2007
+          </div>
+          <div class="govuk-date-input" id="passport-issued">
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="number" inputmode="numeric" onKeyPress="if(this.value.length==2) return false;" />
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="number" inputmode="numeric" onKeyPress="if(this.value.length==2) return false;" />
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="number" inputmode="numeric" onKeyPress="if(this.value.length==4) return false;" />
+              </div>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            I do not have this information now
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <p>You can stay on this page for up to 20 minutes if you need to check your answer. Do not close the web page.</p>
+        </div>
+      </details>
+
+      <a href = "v2-unsuccessful.html"><button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button></a>
+    </div>
+      
+
+    </div>
+  </div>
+{% endblock %}

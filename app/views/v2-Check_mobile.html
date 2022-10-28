@@ -1,0 +1,45 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <a href="v2-Check_mobile.html" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Check your phone
+      </h1>
+      <p>We sent a code to 07789 665475.</p>
+  
+      <p>It might take a few minutes to arrive. The code will expire after 15 minutes.</p>
+     
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="numbers">
+          Enter the 6 digit security code
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="numbers" name="numbers" type="number" onKeyPress="if(this.value.length==6) return false;" />
+      </div>
+
+      <p class="govuk-body"><a href="Check_mobile.html" class="govuk-link">Request a new code </a>if the code you received is not working, has expired, or you did not receive one.</p>
+
+
+
+      <a href="V2-Signed-in.html"><button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button></a>
+        </li>
+      </ul>
+
+  
+
+     
+
+    </div>
+  </div>
+{% endblock %}

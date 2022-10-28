@@ -1,0 +1,42 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <a href="V2-Signed-in.html" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        What is your name?
+      </h1>
+    
+      <div class="govuk-form-group">
+        <form class="form" action="v2-date-of-birth" method="post">
+        <label class="govuk-label" for="first-name">
+          First Name
+        </label>
+        <input class="govuk-input" id="first-name" name="name-1" type="text" autocomplete="given-name">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="surname">
+          Last Name
+        </label>
+        <input class="govuk-input" id="surname" name="name-2" type="text" autocomplete="family-name">
+      </div>
+
+    
+
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+      
+      </form>
+    </div>
+  </div>
+{% endblock %}

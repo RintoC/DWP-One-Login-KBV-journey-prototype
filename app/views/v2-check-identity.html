@@ -1,0 +1,33 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <a href="V2-Signed-in.html" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        We need to check your details
+      </h1>      
+      
+        <p>We'll ask you for the following personal details:</p>
+        <ul class= "govuk-list govuk-list--bullet">
+        <li>name
+          <li>date of birth          
+          <li>address</li>
+        </li></ul>
+       
+     <p>We'll check the details you give us with our records and then ask some security questions to confirm your identity.</p>
+
+      <a href="v2-full_name.html"><button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button></a>
+
+    </div>
+  </div>
+{% endblock %}

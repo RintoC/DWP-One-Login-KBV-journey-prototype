@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <a href="v2-date-of-birth.html" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Find your address
+      </h1>
+
+      <p>Enter your postcode</p>
+
+      <div id="govuk-hint" class="govuk-hint">
+        Enter the postcode of your current home address. This must be a UK postcode, for example SW1A 2AA
+        </div>
+    
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="one-quarter">
+          Postcode
+        </label>
+        <input class="govuk-input govuk-!-width-one-quarter" id="one-quarter" name="one-quarter" type="text" onKeyPress="if(this.value.length==9) return false;" />
+      </div>
+
+      <a href = "v2-address-manual.html"><p>I do not know my postcode</p></a>
+
+      <a href = "v2-address-lookup.html"><button class="govuk-button" data-module="govuk-button">
+        Find my address
+      </button></a>
+    </div>
+  </div>
+{% endblock %}

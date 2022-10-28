@@ -1,0 +1,96 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Please review your details
+      </h1>
+
+      <dl class="govuk-summary-list">
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{ data['name-1'] }} {{ data['name-2'] }}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="v2-full_name.html">
+              Change<span class="govuk-visually-hidden">name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Date of birth
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{ data['passport-issued-day'] }} /
+            {{ data['passport-issued-month'] }} /
+            {{ data['passport-issued-year'] }}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="v2-date-of-birth.html">
+              Change<span class="govuk-visually-hidden">date of birth</span>
+            </a>
+          </dd>
+        </div>
+     
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Current address
+        </dt>
+        <dd class="govuk-summary-list__value">
+
+          {% if data['address-city-current'] %}
+
+            {% if data['address-flat-number-current'] %}
+              {{ data['address-flat-number-current'] }},<br>
+            {% endif %}
+
+            {% if data['address-house-number-current'] %}
+              {{ data['address-house-number-current'] }}
+            {% endif %}
+
+            {% if data['address-house-name-current'] %}
+              {{ data['address-house-name-current'] }},<br>
+            {% endif %}
+
+            {{ data['address-street-current'] }},<br>
+            {{ data['address-city-current'] }},<br>
+            {{ data['address-postcode-current'] or 'LS1 3BE' }}
+
+          {% else %}
+            Office 14, <br>
+            New Station St, <br>
+            Leeds, <br>
+            LS1 5DL
+          {% endif %}
+
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="v2-address-lookup.html">
+            Change<span class="govuk-visually-hidden"> current address</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+      <a href = "v2-check-your-details.html"><button class="govuk-button" data-module="govuk-button">
+        I confirm my details are correct
+      </button></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}
